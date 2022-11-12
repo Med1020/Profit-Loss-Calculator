@@ -1,38 +1,108 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Poppins:wght@100;500&display=swap');
+
+
+:root{
+  --grey:#f7f7f7;
+  --blue:#051622;
+  --green:#1ba098;
+  --gold:#deb992;
+  --light-blue:#e1f2f7;
+  --darkgrey:#e1e2e2;
+
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: var(--grey);
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  color: var(--green);
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 1px solid var(--green);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.inputForm{
+  display:flex;
   flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 5rem;
+  
 }
 
-.App-link {
-  color: #61dafb;
+input{
+  margin-bottom: 20px;
+  border: 0;
+  background-color: var(--grey);
+  border-bottom: 1px solid var(--darkgrey);
+  padding: 5px;
+  transition: 0.3s border-color;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:hover{
+  border-bottom: 1px solid var(--green);
+  
+}
+
+input:focus{
+  outline: none;
+  box-shadow: 0px 1px var(--green);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button{
+  padding: 10px;
+  height: 3rem;
+  width: 150px;
+  border: 1px solid var(--green);
+  background-color: var(--green);
+  border-radius: 5px;
+  color: var(--grey);
+  cursor: pointer;
+  
+}
+button[enabled]:hover{
+  background-color: var(--green);
+  box-shadow: 1px 0px 15px 1px var(--green);
+  transition:box-shadow 0.3s ;
+  color: var(--grey);
+
+}
+
+button:active{
+  background-color: #0d504c;
+  box-shadow: none;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: var(--darkgrey);
+  color: #666666;
+  cursor:not-allowed;
+}
+
+
+
+
+.output{
+  margin: 20px;
+  font-size: 24px;
 }
