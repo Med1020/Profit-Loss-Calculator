@@ -1,14 +1,6 @@
 
-# Getting Started with Create React App
+# Profit Loss Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Get to know whether you're generating a profit or taking a loss on your stock.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
+![Screenshot (29)](https://user-images.githubusercontent.com/94384027/202232663-96241170-0f6b-40be-a6ad-b5e82ebb752a.png)
